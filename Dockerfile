@@ -2,7 +2,7 @@ FROM node:12.22.9
 
 RUN npm install
 
-COPY package*.json ./
+COPY /devopslearning/mynodejs
 
 EXPOSE 8081
 
