@@ -1,11 +1,13 @@
 FROM node:12.22.9
 
+WORKDIR /devopslearning/mynodejs
+
+COPY package*.json ./
+
 RUN npm install
 
-COPY /devopslearning/mynodejs
+COPY . .
 
 EXPOSE 8081
 
-WORKDIR /devopslearning/mynodejs
-
-ENTRYPOINT ["node", "index.js"]
+CMD ["node", "app.js"]
