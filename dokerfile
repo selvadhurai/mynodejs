@@ -6,6 +6,6 @@ COPY package*.json ./
 
 EXPOSE 8081
 
-WORKDIR /opt
+WORKDIR /devopslearning/mynodejs
 
 ENTRYPOINT ["node", "index.js"]
